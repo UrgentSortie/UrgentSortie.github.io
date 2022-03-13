@@ -1,0 +1,46 @@
+body {
+   background-color: powderblue;
+   margin: 0px 100px 0 300px;
+   font-family: 'Roboto', sans-serif;
+}
+
+a {
+  font-size: .75rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a, .bg-a {
+  color: powderblue;
+}
+
+h1, .bg-a div h2 {
+  color: oldlace;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2, nav a {
+  color: steelblue;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+.bg-a {
+  background-color: steelblue; 
+}
+
+.container {
+  margin: 0 auto 0 20px;
+  padding: 20px 0 20px 0;
+  width: 700px;
+}
+
