@@ -15,8 +15,12 @@ a, .bg-a {
   color: powderblue;
 }
 
-h1, .bg-a div h2 {
-  color: oldlace;
+h1 {
+  margin: 5px 0;
+}
+
+h1, .bg-a h2, .bg-a h4 {
+  color: seashell;
 }
 
 h2 {
@@ -30,8 +34,42 @@ h2, nav a {
   color: steelblue;
 }
 
+h3 {
+  margin: 5px 0;
+}
+
+h4 {
+  margin: 5px 0;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+meter {
+  flex-grow: 5;
+  margin: 0 10px;
+}
+
 nav {
-  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0px 5px;
 }
 
 .bg-a {
@@ -39,8 +77,20 @@ nav {
 }
 
 .container {
-  margin: 0 auto 0 20px;
+  margin: 0 20px 0 20px;
   padding: 20px 0 20px 0;
-  width: 700px;
 }
 
+.experience-item {
+  display: flex;
+  align-content: flex-start;
+}
+
+.experience-summary {
+  width: 15%;
+}
+
+#skills p {
+  display: flex;
+  justify-content: space-between
+}

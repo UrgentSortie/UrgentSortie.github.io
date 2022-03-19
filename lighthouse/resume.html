@@ -8,15 +8,20 @@
   </head>
   <body>
     <nav>
-      <a href="#about">about</a>
-      <a href="#skills">skills</a>
-      <a href="#experience">experience</a>
-      <a href="#contact">contact</a>
+      <h4>John Wankiewicz</h4>
+      <div>
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#experience">experience</a>
+        <a href="#contact">contact</a>
+      </div>
     </nav>
     <header class="bg-a">
       <div class="container">
-        <h1>John Wankiewicz</h1>
-        <h4>Web Ninja</h4>
+        <div id="title">
+          <h1>John Wankiewicz</h1>
+          <h4>Web Ninja</h4>
+        </div>
         <img src="coffee_face.jpeg" alt="John Wankiewicz's profile image">
       </div>
     </header>
@@ -37,72 +42,86 @@
     <section id="skills" class="bg-a">
       <div class="container">
         <h2>skills</h2>
-        <p>
-          HTML <meter min="1" max="10" value="10">tests</meter> 100%
-        </p>
-        <p>
-          CSS <meter min="1" max="10" value="10">tests</meter> 100%
-        </p>
-        <p>
-          JavaScript <meter min="1" max="10" value="10">tests</meter> 100%
-        </p>
-        <p>
-          XML <meter min="1" max="10" value="10">tests</meter> 100%
-        </p>
-        <p>
-          SVG <meter min="1" max="10" value="10">tests</meter> 100%
-        </p>
-        <p>
-          jQuery <meter min="1" max="10" value="NaN">tests</meter> 0%
-        </p>
+          <p>
+            <span>HTML</span><meter min="1" max="10" value="10">tests</meter><span>100%</span>
+          </p>
+          <p>
+            <span>CSS</span><meter min="1" max="10" value="10">tests</meter><span>100%</span>
+          </p>
+          <p>
+            <span>JavaScript</span><meter min="1" max="10" value="10">tests</meter><span>100%</span>
+          </p>
+          <p>
+            <span>XML</span><meter min="1" max="10" value="10">tests</meter><span>100%</span>
+          </p>
+          <p>
+            <span>SVG</span><meter min="1" max="10" value="10">tests</meter><span>100%</span>
+          </p>
+          <p>
+            <span>jQuery</span><meter min="1" max="10" value="NaN">tests</meter><span>0%</span>
+          </p>
       </div>
     </section>
 
     <section id="experience">
       <div class="container">
         <h2>experience</h2>
-        <article>
-          <h3>JavaScript Developer</h3>
-          <h4>JavaScript Corp.</h4>
-          <h4>2024 - Present</h4>
-          <ul>
-            <li>Copied desk plow via hackathon affiliate.</li> 
-            <li>Segment ecosystem lead generation follow up and proximity API. </li> 
-            <li>Best filt dev environment ramp up traction which optimized their SEO retainer and mobile first pipeline.</li> 
-            <li>Streamlined optimized kick off usebility bandwidth.</li> 
-            <li>EOD queued user personas to lead generation API for game plan pushes and envelope ROIs.</li> 
-            <li>Look and feel strategic partners for heads down on your plate digests.</li> 
-          </ul>
+        <article class="experience-item">
+          <div class="experience-summary">
+            <h4>JavaScript Corp.</h4>
+            <h4>2024 - Present</h4>
+          </div>
+          <div class="experience-detail">
+            <h3>JavaScript Developer</h3>
+            <ul>
+              <li>Copied desk plow via hackathon affiliate.</li> 
+              <li>Segment ecosystem lead generation follow up and proximity API. </li> 
+              <li>Best filt dev environment ramp up traction which optimized their SEO retainer and mobile first pipeline.</li> 
+              <li>Streamlined optimized kick off usebility bandwidth.</li> 
+              <li>EOD queued user personas to lead generation API for game plan pushes and envelope ROIs.</li> 
+              <li>Look and feel strategic partners for heads down on your plate digests.</li> 
+            </ul>
+          </div>
         </article>
-        <article>
-          <h3>CSS Coder</h3>
-          <h4>CSS Inc.</h4>
-          <h4>2023 - 2024</h4>
-          <ul>
-            <li>B2B ramp up mission statements for cohesive deliverables CTA.</li> 
-            <li>Reached fluid EOD's for follow up targets and bandwidth proximity with organic pipeline OLA fesh outs.</li> 
-            <li>High level client facing synergy mobile first implementation value creation.</li> 
-            <li>Platform value propositions with dev environment whiteboards.</li> 
-          </ul>
+        <article class="experience-item">
+          <div class="experience-summary">
+            <h4>CSS Inc.</h4>
+            <h4>2023 - 2024</h4>
+          </div>
+          <div>
+            <h3>CSS Coder</h3>
+            <ul>
+              <li>B2B ramp up mission statements for cohesive deliverables CTA.</li> 
+              <li>Reached fluid EOD's for follow up targets and bandwidth proximity with organic pipeline OLA fesh outs.</li> 
+              <li>High level client facing synergy mobile first implementation value creation.</li> 
+              <li>Platform value propositions with dev environment whiteboards.</li> 
+            </ul>
+          </div>
         </article>
-        <article>
-          <h3>HTML Monkey</h3>
-          <h4>HTML LLC.</h4>
-          <h4>2022 - 2023</h4>
-          <ul>
-            <li>Leveraged gamma plans for mock up EOD's.</li>
-            <li>Transplanted target audiences to next level post launch next step API's.</li>
-            <li>ROI fluid game chager which was prostponed due to responsive behavior.</li>
-            <li>Lean innovation strategic push the envelope usability third party channel quick desk hot link.</li>
-          </ul>
+        <article class="experience-item">
+          <div class="experience-summary">
+            <h4>HTML LLC.</h4>
+            <h4>2022 - 2023</h4>
+          </div>
+          <div>
+            <h3>HTML Monkey</h3>
+            <ul>
+              <li>Leveraged gamma plans for mock up EOD's.</li>
+              <li>Transplanted target audiences to next level post launch next step API's.</li>
+              <li>ROI fluid game chager which was prostponed due to responsive behavior.</li>
+              <li>Lean innovation strategic push the envelope usability third party channel quick desk hot link.</li>
+            </ul>
+          <div>
         </article>
       </div>
     </section>
 
     <footer id="contact" class="bg-a">
       <div class="container">
-        <h2>John Wankiewicz</h2>
-        <h4>Web Ninja</h4>
+        <div>
+          <h2>John Wankiewicz</h2>
+          <h4>Web Ninja</h4>
+        </div>
         <p>
           <a href="mailto:john.wankiewicz@example.com">john.wankiewicz@example.com</a><br>
           <a href="tel:2501234567">250-123-4567</a><br>
