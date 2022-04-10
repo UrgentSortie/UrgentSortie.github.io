@@ -72,7 +72,7 @@ function process_response(response) {
     "Thunderstorm": "⛈"
   };
 
-  $("#results").append("<div class='icon'>" + ICON[cond] + "</div>");
+  $("#results").append("<div class='icon'>" + (ICON[cond] || "⛅") + "</div>");
 
   var temp;
   if (degrees < 0) {
