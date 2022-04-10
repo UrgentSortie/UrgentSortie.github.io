@@ -1,8 +1,12 @@
 body {
    background-color: powderblue;
-   margin: 0px 100px 0 300px;
+   margin: 0 8% 0 8%;
    font-family: 'Roboto', sans-serif;
 }
+
+::selection {
+  background-color: LightGoldenRodYellow;
+};
 
 a {
   font-size: .75rem;
@@ -15,12 +19,18 @@ a, .bg-a {
   color: powderblue;
 }
 
+a:hover {
+  color: red;
+  transition: all 1s ease-out;
+}
+
 h1 {
   margin: 5px 0;
 }
 
 h1, .bg-a h2, .bg-a h4 {
   color: seashell;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -53,14 +63,26 @@ meter {
   margin: 0 10px;
 }
 
+meter::meter-bar {
+  border-radius: 10px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: orange;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+nav div {
+  display: flex;
+}
+
 nav a {
-  margin-left: 10px;
+  margin: 0 5px;
 }
 
 footer .container {
@@ -68,8 +90,17 @@ footer .container {
   justify-content: space-between;
 }
 
-footer p {
+footer div {
   margin: 0px 5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+p:first-letter {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .bg-a {
@@ -87,10 +118,23 @@ footer p {
 }
 
 .experience-summary {
-  width: 15%;
+  width: 50%;
 }
 
-#skills p {
+.meter {
   display: flex;
   justify-content: space-between
+}
+
+@media (max-width: 600px) {
+  nav, nav div {
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 1.3em;
+  }
+
+  header > div, footer .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

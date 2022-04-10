@@ -1,0 +1,130 @@
+
+
+body {
+  align-items: center;
+  background: cornsilk;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+}
+
+header {
+  font-size: 2rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  background: #FFE;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+.orange-outline {
+  outline: solid orange;
+}
+
+@keyframes rubber-band-in {
+  from {
+    transform: scale(0, 0);
+    
+  }
+
+  50% {
+    transform: scale(1.5, 0.5);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes rubber-band-out {
+  from {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.25, 0.75);
+  }
+
+  to {
+    transform: scale(0, 0);
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(-20);
+  }
+
+  25% {
+    transform: translateX(0.5);
+  }
+
+  50% {
+    transform: translateX(-0.5);
+  }
+
+  75% {
+    transform: translateX(0.5);
+  }
+
+  to {
+    transform: translateX(0, 0);
+  }
+}
+
+
+.rubber-band {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-name: rubber-band-in;
+  position: relative;
+}
+
+.icon {
+  font-size: 10rem;
+}
+
+.freezing {
+  background: #DDE;
+}
+
+.cold {
+  background: #CDF;
+}
+
+.cool {
+  background: #DEE;
+}
+
+.warm {
+  background: #FFC;
+}
+
+.hot {
+  background: #FCC;
+}
+
+.too-hot {
+  background: #EBA;
+}
+
+.spacer {
+  height: 2rem;
+}
