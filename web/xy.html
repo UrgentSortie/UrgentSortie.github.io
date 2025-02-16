@@ -1,0 +1,14 @@
+<p id="output"></p>
+<script>
+  var output = document.querySelector("#output");
+  document.addEventListener("mousemove", mouse_move);
+
+  function mouse_move(e) {
+    output.innerText = `
+      Client X/Y: ${e.clientX}, ${e.clientY}
+      Offset X/Y: ${e.offsetX}, ${e.offsetY}
+      Page X/Y: ${e.pageX}, ${e.pageY}
+      Screen X/Y: ${e.screenX}, ${e.screenY}
+    `;
+}
+</script>
