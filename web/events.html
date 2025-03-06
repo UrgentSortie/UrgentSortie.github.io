@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>HTML Events</title>
+  </head>
+  <body id="body">
+    <pre id="pre" contenteditable></pre>
+    <script>
+      const targets = new Map([[window, "window"], [document, "document"], [document.documentElement, "html"], [body, "body"], [pre, "pre"]]);
+      const events = ["load", "error", "mousemove", "mouseover", "mouseout", "keydown", "keyup", "click", "dblclick", "focus", "blur", "change"];
+
+      for (var target of targets.keys()) {
+        for (var event of events) {
+          target.addEventListener(event, function(event) {
+            pre.innerText = `"${event.type}" ${targets.get(event.target)} >> ${targets.get(event.currentTarget)}\n` + pre.innerText;
+            if (event.currentTarget == window) {
+              pre.innerText = "\n" + pre.innerText;
+            }
+            event.preventDefault();
+          })
+        }
+      }
+    </script>
+  </body>
+</html>
