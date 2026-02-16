@@ -1,0 +1,56 @@
+pre {
+  font-size: 14px;
+  line-height: 1.4
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+.class_def {
+  color: #006060;
+  font-weight: bold;
+}
+
+.class_ref {
+  color: #006060;
+}
+
+.comment {
+  color: #909090;
+  font-weight: bold;
+}
+
+.heading {
+  color: #606060;
+  font-weight: bold;
+}
+
+.enum {
+  color: #000000;
+}
+
+.footnote {
+  color: #606060
+}
+
+.keyword {
+  color: #600060
+}
+
+.literal, .string {
+  color: #600000
+}
+
+.member_def {
+  color: #000060;
+}
+
+.member_ref {
+  color: #303060;
+}
